@@ -33,7 +33,7 @@ class DocMergerGUI:
         self.folder_var = tk.StringVar()
         folder_entry = ttk.Entry(main_frame, textvariable=self.folder_var, width=50)
         folder_entry.grid(row=0, column=1, sticky=(tk.W, tk.E), padx=(5, 5), pady=5)
-        browse_btn = ttk.Button(main_frame, text="Bläddra...", command=self.browse_folder)
+        browse_btn = ttk.Button(main_frame, text="Browse...", command=self.browse_folder)
         browse_btn.grid(row=0, column=2, pady=5)
         
         
@@ -219,4 +219,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
