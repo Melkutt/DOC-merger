@@ -4,7 +4,6 @@ import threading
 import win32com.client
 import os
 import time
-#from  pathlib import Path
 
 class DocMergerGUI:
     def __init__(self, root):
@@ -174,7 +173,7 @@ class DocMergerGUI:
                     range_end.InsertBreak(7)
                     range_end.InsertFile(os.path.abspath(file))
                     
-                    time.sleep(0.05)  # <-- PAUS HÄR (50 ms)
+                    time.sleep(0.05)  # <-- Sleep (50 ms)
                     
                 except Exception as e:
                     self.log_message(f"Error inserting {filename}:{str(e)}")
@@ -220,3 +219,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
